@@ -1,5 +1,5 @@
-# ODHTBAnalysis
-Analysis of TB Data at ODH 
+# ODH Grandeur
+
 #Pull from github: 
 git clone https://github.com/UPHL-BioNGS/Grandeur.githttps://github.com/UPHL-BioNGS/Grandeur.git
 
@@ -16,6 +16,6 @@ wget --output-document sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/
 tar -vxzf sratoolkit.tar.gz
 export PATH=$PATH:$PWD/sratoolkit.3.0.0-ubuntu64/bin
 which fastq-dump
-#Test to see if it works: fastq-dump --stdout SRR390728 | head -n 8
 
-#Guide for Quic
+#Test to see if it works: 
+fastq-dump --stdout SRR390728 | head -n 8
